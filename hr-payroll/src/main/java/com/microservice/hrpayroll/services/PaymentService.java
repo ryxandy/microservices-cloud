@@ -14,10 +14,6 @@ import com.microservice.hrpayroll.feignclients.WorkerFeignClient;
 
 @Service
 public class PaymentService {
-
-	//Macete pra pegar o valor dessa variável que foi setada la no app properties
-	@Value("${hr-worker.host}")
-	private String workerHost;
 	
 	@Autowired
 	private WorkerFeignClient workerFeignClient;
